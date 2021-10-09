@@ -1,0 +1,97 @@
+$blue: linear-gradient(60deg, #0c8b70, #7de4ce);
+$bg-color: #1bbc9a;
+%linkborderline {
+  position: absolute;
+  content: " ";
+  width: 90%;
+  height: 3px;
+  top: 0px;
+  left: 0px;
+  background-image: $blue;
+  transform: translate(5%, -50%);
+}
+.navBar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0em 1em;
+  margin-top: 1em;
+  max-height: 9rem;
+  z-index: 22;
+  background-color: transparent !important;
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.8em;
+    .logo {
+      max-width: 50px;
+      width: 100%;
+      max-height: 50px;
+      transition: all 0.7s ease-in-out;
+
+      @media screen and(max-width: 1300px) {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+  }
+
+  .mobile-bars {
+    display: none;
+    color: $bg-color;
+
+    @media screen and (max-width: 994px) {
+      display: block;
+      padding: 1rem;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    @media (max-width: 994px) {
+      display: none;
+    }
+
+    .NavLink {
+      position: relative;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 24px;
+      padding: 1em;
+      &:hover {
+        color: $bg-color;
+        &::before {
+          @extend %linkborderline;
+        }
+      }
+    }
+    .activeLink::before {
+      @extend %linkborderline;
+    }
+    .linkBtn {
+      background-color: #fff;
+      color: $bg-color;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+      &:hover {
+        background-color: $bg-color;
+        color: #fff;
+      }
+    }
+  }
+}

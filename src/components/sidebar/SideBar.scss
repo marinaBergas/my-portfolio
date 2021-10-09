@@ -1,0 +1,53 @@
+$blue: linear-gradient(60deg, rgb(116, 116, 240) 10%, rgb(112, 214, 214));
+$bg-color: #1bbc9a;
+.side-bar {
+  background-color: #fff;
+  position: absolute;
+  top: -150%;
+  left: 0;
+  width: 100%;
+  transition: 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #f1f1f1;
+  border-top: 3px solid $bg-color;
+  z-index: 555;
+  margin-bottom: 1rem;
+  padding-inline: calc((100vw - 82%) / 2);
+
+  @media screen and (min-width: 924px) {
+    display: none;
+  }
+
+  .NavLink {
+    font-size: 0.75rem;
+    color: #101010;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1em 1em;
+    margin: 0.4em 0em;
+    width: 100%;
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #f1f1f1;
+    transition: 0.7s;
+    width: 100%;
+    &:hover {
+      opacity: 0.7;
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.animation {
+  top: 6.4rem;
+}
