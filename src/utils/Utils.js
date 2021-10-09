@@ -2,6 +2,7 @@ export const navbarlinksRight = [
   {
     id: 1,
     linkName: "About Me",
+    link: "#about",
   },
   {
     id: 2,

@@ -3,7 +3,7 @@ import "./AboutMe.scss";
 import myProfileImage from "../../assets/marinasaber.png";
 const AboutMe = () => {
   return (
-    <div className="about__content">
+    <div className="about__content" id="about">
       <div className="img-container">
         <img src={myProfileImage} alt="marina saber" className="img" />
       </div>

@@ -16,7 +16,7 @@ const NavBar = ({ collapsed, setCollapsed }) => {
   };
 
   const navLinks = navbarlinksRight.map((link) => (
-    <NavLink
+    <a
       className={`${
         activeId === link.id && link.id !== 4
           ? "activeLink NavLink "
@@ -24,12 +24,12 @@ const NavBar = ({ collapsed, setCollapsed }) => {
           ? " NavLink"
           : "linkBtn"
       }`}
-      to="/"
+      href={link.link}
       key={link.id}
       onClick={() => handleClick(link.id)}
     >
       {link.linkName}
-    </NavLink>
+    </a>
   ));
   return (
     <nav className="navBar">
