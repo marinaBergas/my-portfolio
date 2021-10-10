@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 924px) {
+    flex-direction: column;
+  }
   .img-container {
     width: 100%;
     padding: 1.2em;
