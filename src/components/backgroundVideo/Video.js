@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import backgroundVideo from "../../assets/background-video.mp4";
 import "./Video.scss";
 const Video = () => {
   return (
-    <div>
-      <video muted loop autoPlay className="video">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
-    </div>
+    <Fragment>
+      <video
+        muted
+        loop
+        autoPlay
+        src={backgroundVideo}
+        className="video"
+      ></video>
+    </Fragment>
   );
 };
 

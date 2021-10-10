@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif, monospace;
+  margin: 0px;
+  padding: 0px;
 }
 
 code {

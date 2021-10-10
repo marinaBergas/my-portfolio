@@ -7,10 +7,10 @@ import "./header.scss";
 const Header = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="header__content content">
+    <div className="header__content ">
       <NavBar collapsed={collapsed} setCollapsed={setCollapsed} />
       <SideBar collapsed={collapsed} setCollapsed={setCollapsed} />
-      <HeaderArtical/>
+      <HeaderArtical />
       <Video />
     </div>
   );
