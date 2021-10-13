@@ -12,14 +12,14 @@ const SideBar = ({ collapsed, setCollapsed }) => {
     setCollapsed(!collapsed);
   };
   const navLinks = navbarlinksRight.map((link) => (
-    <NavLink
+    <a
       className={`${activeId === link.id ? "activeLink NavLink " : " NavLink"}`}
-      to="/"
+      href={link.link}
       key={link.id}
       onClick={() => handleClick(link.id)}
     >
       {link.linkName}
-    </NavLink>
+    </a>
   ));
   return (
     <aside id="sidebar" className={cName}>

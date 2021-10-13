@@ -5,12 +5,12 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 import ScrollAnimation from "react-animate-on-scroll";
 const AboutMe = () => {
   return (
-    <section className="about__wrapper">
+    <section className="about__wrapper" id="about">
       <h2 className="about-header">About Me</h2>
-      <div className="about__container" id="about">
+      <div className="about__container">
         <ScrollAnimation
+          duration={3}
           animateIn="fadeIn"
-          initiallyVisible={true}
           className="img-container"
         >
           <img src={myProfileImage} alt="marina saber" className="img" />

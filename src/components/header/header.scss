@@ -1,4 +1,7 @@
 .header__content {
   position: relative;
-  height: 85vh;
+  height: 95vh;
+  @media screen and(max-width: 575px) {
+    height: 60vh;
+  }
 }

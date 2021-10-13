@@ -14,6 +14,8 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
 }
 .about__wrapper {
   background-color: $about-background;
+  padding: 2em 0em;
+
   .about-header {
     display: flex;
     align-items: center;
@@ -34,14 +36,13 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
     justify-content: center;
     align-items: center;
     opacity: 0.8;
-    @media screen and (max-width: 924px) {
+    @media screen and (max-width: 1199.98px) {
       flex-direction: column;
     }
     .animated {
-      padding-inline: 1.5em;
+      // padding-inline: 1.5em;
       .img {
         background-color: #d7dae9;
-        opacity: 1;
         width: 350px;
         border-radius: 50%;
       }
@@ -65,11 +66,14 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
           cursor: pointer;
           border-radius: 20px;
           background-color: transparent;
+          @media screen and(max-width: 575px) {
+            padding: 5px 5px;
+          }
           a {
             color: blue;
           }
           &:hover {
-            background-color: blue;
+            background-color: rgb(40, 40, 207);
             border: 2px solid transparent;
             a {
               color: #fff;
@@ -78,6 +82,9 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
         }
         .btn {
           margin: 1em 1.2em 1em 0px;
+          @media screen and(max-width: 575px) {
+            margin: 0em;
+          }
         }
         .linkedin-btn,
         .git-btn {

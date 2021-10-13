@@ -1,0 +1,120 @@
+$blue: linear-gradient(60deg, #232f60, #bfdff2);
+%linkborderline {
+  position: absolute;
+  content: " ";
+  width: 15%;
+  height: 5px;
+  top: 80%;
+  left: 50%;
+  background-image: $blue;
+  transform: translate(-50%, -50%);
+}
+section {
+  background-color: #232420;
+  .projects-header {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 1em 0em;
+    position: relative;
+    &::after {
+      @extend %linkborderline;
+    }
+  }
+  .projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .projects {
+      margin: 2em;
+      padding: 1em;
+      transition: all 0.1s linear 0s;
+      width: 60%;
+      text-align: left;
+      border-radius: 25px;
+      max-width: 700px;
+      min-width: 300px;
+      max-height: 100%;
+      min-height: 95%;
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      .projects-screenshot {
+        width: 50%;
+        align-items: center;
+        text-align: end;
+        margin: auto 1.5em;
+        border-radius: 20%;
+        @media screen and(max-width: 1199.98px) {
+          display: none;
+        }
+        img {
+          width: 250px;
+          height: 280px;
+          border-radius: 20px;
+          display: block;
+        }
+      }
+      &:hover {
+        transform: scale(1.02);
+      }
+      .projects-text {
+        width: 70%;
+        margin: auto 1.5em;
+        @media screen and(max-width: 1199.98px) {
+          margin: auto 0px;
+          width: 90%;
+        }
+        @media screen and(max-width: 575px) {
+          width: 95%;
+        }
+        .project-btn {
+          border: 2px solid rgb(55, 55, 184);
+          padding: 15px 32px;
+          text-align: center;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 20px;
+          background-color: transparent;
+          a {
+            color: blue;
+          }
+          &:hover {
+            background-color: rgb(40, 40, 207);
+            border: 2px solid transparent;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        .img {
+          margin-block-end: 20px;
+
+          img {
+            border-radius: 30%;
+            width: 80px;
+            height: 70px;
+            object-fit: scale-down;
+            background-image: $blue;
+          }
+        }
+        .projects-container {
+          .projects-content-header {
+            text-align: left;
+          }
+          p {
+            margin-block: 20px;
+            font-weight: 500;
+            color: #484942;
+          }
+        }
+      }
+    }
+  }
+}
+.projects:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
