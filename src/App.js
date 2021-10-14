@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import "./App.scss";
 import AboutMe from "./components/about-me/AboutMe";
 import Home from "./components/home/Home";
@@ -6,12 +6,12 @@ import Home from "./components/home/Home";
 function App() {
   return (
     <div className="app-container">
-      <Router>
+      <HashRouter>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={AboutMe} />
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
