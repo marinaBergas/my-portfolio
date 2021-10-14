@@ -10,6 +10,8 @@ import ToDoListScreenShot from "../assets/TodoList-screenshot.png";
 import ToDoListLogo from "../assets/todolist-logo.png";
 import servicesLogo from "../assets/servicesLogo.png";
 import ServicesScreenShot from "../assets/services-screenshots.png";
+import postLeaveRequestLogo from "../assets/post-leave-request -logo.png";
+import leavePostRequestScreenShot from "../assets/post-leave-request.png";
 
 export const navbarlinksRight = [
   {
@@ -54,6 +56,14 @@ export const projects = [
   },
   {
     id: 3,
+    logoimg: `${postLeaveRequestLogo}`,
+    url: `${"https://marinabergas.github.io/post-leave-request/#/"}`,
+    imgscreenshot: `${leavePostRequestScreenShot}`,
+    header: "Post Leave Request",
+    paragraph: "post leave request website using,react,hooks,redux",
+  },
+  {
+    id: 4,
     logoimg: `${schoolLogo}`,
     url: `${"https://marinabergas.github.io/map-feature/#/"}`,
     imgscreenshot: `${SchoolScreenShot}`,
@@ -62,7 +72,7 @@ export const projects = [
       "react website  using leafletmap library carousel with javascript",
   },
   {
-    id: 4,
+    id: 5,
     logoimg: `${ToDoListLogo}`,
     url: `${"https://marinabergas.github.io/TodoList/"}`,
     imgscreenshot: `${ToDoListScreenShot}`,
@@ -71,7 +81,7 @@ export const projects = [
       "Todo website app using react fake api deploy with github use hooks ,props",
   },
   {
-    id: 5,
+    id: 6,
     logoimg: `${mogoLogo}`,
     url: `${"https://marinabergas.github.io/mego-template-/"}`,
     imgscreenshot: `${MegoScreenShot}`,
@@ -80,7 +90,7 @@ export const projects = [
       " creative template responsive landpage using html sass bootstrap",
   },
   {
-    id: 6,
+    id: 7,
     logoimg: `${restaurantLogo}`,
     url: `${"https://marinabergas.github.io/restaurant2/"}`,
     imgscreenshot: `${RestaurantScreenShot}`,

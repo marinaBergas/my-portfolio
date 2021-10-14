@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-// import { ReactComponent as Logo } from "../../assets/logo.jpg";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { navbarlinksRight } from "../../utils/Utils";
 import "./NavBar.scss";

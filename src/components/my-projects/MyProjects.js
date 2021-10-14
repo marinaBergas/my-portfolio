@@ -3,7 +3,7 @@ import { projects } from "../../utils/Utils";
 import "./MyProjects.scss";
 const MyProjects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="projects__wrapper">
       <h2 className="projects-header">Projects</h2>
       {projects.map((el) => {
         return (

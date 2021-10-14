@@ -11,6 +11,9 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
   left: 50%;
   background-image: $blue;
   transform: translate(-50%, -50%);
+  @media screen and(max-width: 575px) {
+    width: 25%;
+  }
 }
 .about__wrapper {
   background-color: $about-background;
@@ -26,7 +29,9 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
     &::after {
       @extend %linkborderline;
     }
-
+    @media screen and(max-width: 575px) {
+      font-size: 25px;
+    }
     color: $text-color;
   }
   .about__container {
@@ -83,7 +88,7 @@ $blue: linear-gradient(135deg, #19295c 0%, #259ed7);
         .btn {
           margin: 1em 1.2em 1em 0px;
           @media screen and(max-width: 575px) {
-            margin: 0em;
+            margin: 0.2em;
           }
         }
         .linkedin-btn,

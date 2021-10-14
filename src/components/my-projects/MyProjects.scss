@@ -8,8 +8,11 @@ $blue: linear-gradient(60deg, #232f60, #bfdff2);
   left: 50%;
   background-image: $blue;
   transform: translate(-50%, -50%);
+  @media screen and(max-width: 575px) {
+    width: 25px;
+  }
 }
-section {
+.projects__wrapper {
   background-color: #232420;
   .projects-header {
     text-align: center;
@@ -17,6 +20,9 @@ section {
     font-size: 35px;
     padding: 1em 0em;
     position: relative;
+    @media screen and(max-width: 575px) {
+      font-size: 25px;
+    }
     &::after {
       @extend %linkborderline;
     }
