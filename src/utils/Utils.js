@@ -56,6 +56,15 @@ export const projects = [
   },
   {
     id: 3,
+    logoimg: `${ToDoListLogo}`,
+    url: `${"https://marinabergas.github.io/TodoList/"}`,
+    imgscreenshot: `${ToDoListScreenShot}`,
+    header: "Todo website app",
+    paragraph:
+      "Todo website app using react fake api deploy with github use hooks ,props",
+  },
+  {
+    id: 4,
     logoimg: `${postLeaveRequestLogo}`,
     url: `${"https://marinabergas.github.io/post-leave-request/#/"}`,
     imgscreenshot: `${leavePostRequestScreenShot}`,
@@ -63,22 +72,13 @@ export const projects = [
     paragraph: "post leave request website using,react,hooks,redux",
   },
   {
-    id: 4,
+    id: 5,
     logoimg: `${schoolLogo}`,
     url: `${"https://marinabergas.github.io/map-feature/#/"}`,
     imgscreenshot: `${SchoolScreenShot}`,
     header: "School map ",
     paragraph:
       "react website  using leafletmap library carousel with javascript",
-  },
-  {
-    id: 5,
-    logoimg: `${ToDoListLogo}`,
-    url: `${"https://marinabergas.github.io/TodoList/"}`,
-    imgscreenshot: `${ToDoListScreenShot}`,
-    header: "Todo website app",
-    paragraph:
-      "Todo website app using react fake api deploy with github use hooks ,props",
   },
   {
     id: 6,

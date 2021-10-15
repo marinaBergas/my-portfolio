@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { navbarlinksRight } from "../../utils/Utils";
+import { HashLink } from "react-router-hash-link";
 
 import "./SideBar.scss";
 const SideBar = ({ collapsed, setCollapsed }) => {
@@ -11,14 +12,14 @@ const SideBar = ({ collapsed, setCollapsed }) => {
     setCollapsed(!collapsed);
   };
   const navLinks = navbarlinksRight.map((link) => (
-    <a
+    <HashLink
       className={`${activeId === link.id ? "activeLink NavLink " : " NavLink"}`}
-      href={link.link}
+      to={`/${link.link}`}
       key={link.id}
       onClick={() => handleClick(link.id)}
     >
       {link.linkName}
-    </a>
+    </HashLink>
   ));
   return (
     <aside id="sidebar" className={cName}>

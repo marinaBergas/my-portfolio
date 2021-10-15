@@ -4,6 +4,8 @@ import { FaBars } from "react-icons/fa";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { navbarlinksRight } from "../../utils/Utils";
 import "./NavBar.scss";
+import { HashLink } from "react-router-hash-link";
+
 const NavBar = ({ collapsed, setCollapsed }) => {
   const [activeId, setActiveId] = useState("");
 
@@ -15,7 +17,7 @@ const NavBar = ({ collapsed, setCollapsed }) => {
   };
 
   const navLinks = navbarlinksRight.map((link) => (
-    <a
+    <HashLink
       className={`${
         activeId === link.id && link.id !== 4
           ? "activeLink NavLink "
@@ -23,12 +25,12 @@ const NavBar = ({ collapsed, setCollapsed }) => {
           ? " NavLink"
           : "linkBtn"
       }`}
-      href={link.link}
+      to={`/${link.link}`}
       key={link.id}
       onClick={() => handleClick(link.id)}
     >
       {link.linkName}
-    </a>
+    </HashLink>
   ));
   return (
     <nav className="navBar">
