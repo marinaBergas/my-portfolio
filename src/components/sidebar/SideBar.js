@@ -27,11 +27,7 @@ const SideBar = ({ collapsed, setCollapsed }) => {
       {link.linkName === "Resume" && (
         <a
           className={`${
-            activeId === link.id && link.id !== 4
-              ? "activeLink NavLink "
-              : link.id !== 4
-              ? " NavLink"
-              : "linkBtn"
+            activeId === link.id ? "activeLink NavLink " : " NavLink"
           }`}
           href={link.link}
           onClick={() => handleClick(link.id)}
